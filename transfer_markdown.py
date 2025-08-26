@@ -56,7 +56,7 @@ def translate_markdown(input_file_path, output_dir=None):
             {"role": "system", "content": prompt},
             {"role": "user", "content": markdown_content},
         ]
-
+        print("正在翻译中·····")
         response = llm.invoke(message)
         res = response.content
         res = res.replace("```markdown", "")
