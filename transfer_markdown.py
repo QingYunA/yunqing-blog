@@ -2,7 +2,7 @@ from langchain_deepseek.chat_models import ChatDeepSeek  # 这个导入切记不
 import argparse
 from pathlib import Path
 import os
-import glob
+import re
 
 
 def translate_markdown(input_file_path, output_dir=None):
@@ -29,8 +29,6 @@ def translate_markdown(input_file_path, output_dir=None):
 
     # 确保输出目录存在
     os.makedirs(output_dir, exist_ok=True)
-
-    output_file = os.path.join(output_dir, f"{name}_en.md")
 
     prompt = """
 # 角色 
@@ -61,6 +59,8 @@ def translate_markdown(input_file_path, output_dir=None):
         res = response.content
         res = res.replace("```markdown", "")
         res = res[:-3] if res.endswith("```") else res
+
+        output_file = os.path.join(output_dir, f"{name}_en.md")
 
         with open(output_file, "w", encoding="utf-8") as f:
             f.write(res)
@@ -107,11 +107,47 @@ def process_input(input_path, output_dir=None):
         print(f"❌ 路径不存在: {input_path}")
 
 
+def rename_en_blog(file_path):
+    file_path = Path(file_path)
+    if file_path.is_dir():
+        md_files = list(file_path.glob("*.md"))
+        for md_file in md_files:
+            rename_en_blog(md_file)
+    else:
+        with open(file_path, "r", encoding="utf-8") as f:
+            content = f.readlines()
+
+        for line in content:
+            if line.startswith("title:"):
+                title = line.split("title:")[1].strip()
+                break
+        # 清理标题，移除不适合文件名的字符
+        clean_title = re.sub(r'[<>:"/\\|?*]', "", title)
+        clean_title = clean_title.replace(" ", "-")
+
+        # 获取文件所在目录和扩展名
+        file_dir = os.path.dirname(file_path)
+        file_ext = os.path.splitext(file_path)[1]
+
+        # 构建新的文件名
+        new_filename = f"{clean_title}{file_ext}"
+        new_file_path = os.path.join(file_dir, new_filename)
+
+        # 重命名文件
+        try:
+            os.rename(file_path, new_file_path)
+            print(f"✅ 文件重命名成功: {os.path.basename(file_path)} -> {new_filename}")
+        except Exception as e:
+            print(f"❌ 文件重命名失败: {str(e)}")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="中英文markdown转化")
     parser.add_argument(
         "--input", "-i", type=str, required=True, help="输入文件或文件夹路径"
     )
+    parser.add_argument("--translate", "-t", action="store_true", help="是否翻译")
+    parser.add_argument("--rename", "-r", action="store_true", help="是否重命名")
     parser.add_argument(
         "--output_dir",
         "-o",
@@ -123,4 +159,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # 处理输入路径
-    process_input(args.input, args.output_dir)
+    if args.translate:
+        process_input(args.input, args.output_dir)
+    if args.rename:
+        rename_en_blog(args.input)
