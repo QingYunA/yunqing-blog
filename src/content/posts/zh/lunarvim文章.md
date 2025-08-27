@@ -2,9 +2,10 @@
 title: LunarVim安装
 published: 2024-04-23
 description: LunarVim安装
-tags: [LunarVim, 安装]
+tags: ['LunarVim', '安装']
 category: 学习
-draft: false
+draft: False
+slug: lunarvim安装
 ---
 
 使用LunarVim已经有一段时间了，在过去的时间我使用了nvim，spacevim等一系列开箱即用的vim软件，综合体验下来，lunarvim使用丝滑，添加插件也极为方便。

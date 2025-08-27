@@ -2,9 +2,10 @@
 title: Latex常用符号
 published: 2023-08-03
 description: Latex常用符号
-tags: [LaTeX, 符号]
+tags: ['LaTeX', '符号']
 category: 学习
-draft: false
+draft: False
+slug: latex常用符号
 ---
 
 pa'r![](https://cdn.nlark.com/yuque/0/2022/png/25825898/1667053306362-05f3a5d3-4f44-4a45-a23c-95f4159e2dfc.png)

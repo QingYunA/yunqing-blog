@@ -2,9 +2,10 @@
 title: 在Nvim中配置Ruff格式化工具（Python）
 published: 2024-04-22
 description: 在Nvim中配置Ruff格式化工具（Python）
-tags: [Nvim, Ruff, 格式化工具, Python]
+tags: ['Nvim', 'Ruff', '格式化工具', 'Python']
 category: 学习
-draft: false
+draft: False
+slug: 在nvim中配置ruff格式化工具python
 ---
 
 # 在Nvim中配置Ruff格式化工具（Python）

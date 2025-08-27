@@ -2,9 +2,10 @@
 title: Enabling Large Language Models (LLMs) to Understand Tree-like JSON Structures via TypeScript Syntax
 published: 2025-08-21
 description: Enabling Large Language Models (LLMs) to Understand Tree-like JSON Structures via TypeScript Syntax
-tags: [Large Language Models, Tree-like JSON, Understanding, LLMs, TypeScript]
+tags: ['Large Language Models', 'Tree-like JSON', 'Understanding', 'LLMs', 'TypeScript']
 category: Tools
-draft: false
+draft: False
+slug: enabling-large-language-models-llms-to-understand
 ---
 
 ## Motivation

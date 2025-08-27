@@ -2,9 +2,10 @@
 title: RSS
 published: 2024-04-24
 description: RSS
-tags: [RSS]
+tags: ['RSS']
 category: 学习
-draft: false
+draft: False
+slug: rss
 ---
 
 ## RSS软件

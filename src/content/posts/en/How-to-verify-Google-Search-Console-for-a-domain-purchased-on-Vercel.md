@@ -2,9 +2,10 @@
 title: How to verify Google Search Console for a domain purchased on Vercel
 published: 2025-08-25
 description: How to verify Google Search Console for a domain purchased on Vercel
-tags: [vercel, google search console, domain]
+tags: ['vercel', 'google search console', 'domain']
 category: Learning
-draft: false
+draft: False
+slug: how-to-verify-google-search-console-for-a-domain-p
 ---
 
 # How to verify Google Search Console for a domain purchased on Vercel

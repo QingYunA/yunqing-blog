@@ -5,6 +5,7 @@ description: 基于python vtk的脑血管渲染
 tags: [Python, VTK, 脑血管渲染, 科研绘图]
 category: 工具
 draft: false
+slug: python-vtk-cerebrovascular-rendering
 ---
 
 ## 前言

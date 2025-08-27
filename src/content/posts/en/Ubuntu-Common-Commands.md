@@ -2,9 +2,10 @@
 title: Ubuntu Common Commands
 published: 2022-10-11
 description: Ubuntu Common Commands
-tags: [Ubuntu, Commands]
+tags: ['Ubuntu', 'Commands']
 category: Learning
-draft: false
+draft: False
+slug: ubuntu-common-commands
 ---
 ### Network Training Commands 
 ``` bash

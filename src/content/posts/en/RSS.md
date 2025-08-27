@@ -2,9 +2,10 @@
 title: RSS
 published: 2024-04-24
 description: RSS
-tags: [RSS]
+tags: ['RSS']
 category: Learning
-draft: false
+draft: False
+slug: rss
 ---
 
 ## RSS Software

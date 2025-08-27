@@ -2,9 +2,10 @@
 title: 基于langfuse api提取指定trace
 published: 2025-08-22
 description: 基于langfuse api提取指定trace的日志
-tags: [langfuse, api, trace, log]
+tags: ['langfuse', 'api', 'trace', 'log']
 category: 学习
-draft: false
+draft: False
+slug: 基于langfuse-api提取指定trace
 ---
 
 # 基于langfuse api提取指定trace的日志

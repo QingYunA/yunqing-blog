@@ -2,9 +2,10 @@
 title: Cerebrovascular Rendering Based on Python VTK
 published: 2025-08-11
 description: Cerebrovascular Rendering Based on Python VTK
-tags: [Python, VTK, Cerebrovascular Rendering, Scientific Visualization]
+tags: ['Python', 'VTK', 'Cerebrovascular Rendering', 'Scientific Visualization']
 category: Tools
-draft: false
+draft: False
+slug: cerebrovascular-rendering-based-on-python-vtk
 ---
 
 ## Preface

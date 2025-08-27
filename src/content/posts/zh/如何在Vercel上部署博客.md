@@ -2,9 +2,10 @@
 title: 如何在Vercel上部署博客
 published: 2025-08-27
 description: 如何在Vercel上部署博客
-tags: [blog,vercel]
+tags: ['blog', 'vercel']
 category: 博客
-draft: false
+draft: False
+slug: 如何在vercel上部署博客
 ---
 
 ## 找到喜欢的博客

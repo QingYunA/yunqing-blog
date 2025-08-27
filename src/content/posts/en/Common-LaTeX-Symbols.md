@@ -2,9 +2,10 @@
 title: Common LaTeX Symbols
 published: 2023-08-03
 description: Common LaTeX Symbols
-tags: [LaTeX, Symbols]
+tags: ['LaTeX', 'Symbols']
 category: Learning
-draft: false
+draft: False
+slug: common-latex-symbols
 ---
 
 ![](https://cdn.nlark.com/yuque/0/2022/png/25825898/1667053306362-05f3a5d3-4f44-4a45-a23c-95f4159e2dfc.png)

@@ -2,9 +2,10 @@
 title: Diffusion Model Learning
 published: 2024-04-22
 description: Learning about diffusion models
-tags: [diffusion models, learning]
+tags: ['diffusion models', 'learning']
 category: Learning
-draft: false
+draft: False
+slug: diffusion-model-learning
 ---
 
 # Summary of Diffusion Models

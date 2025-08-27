@@ -2,9 +2,10 @@
 title: Ubuntu常用命令
 published: 2022-10-11
 description: Ubuntu常用命令
-tags: [Ubuntu, 命令]
+tags: ['Ubuntu', '命令']
 category: 学习
-draft: false
+draft: False
+slug: ubuntu常用命令
 ---
 ### 网络训练命令 
 ``` bash

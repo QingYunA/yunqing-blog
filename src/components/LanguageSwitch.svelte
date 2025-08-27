@@ -10,16 +10,7 @@
         { code: "en", name: "English", flag: "🇺🇸" }
     ];
     
-    // Get current page path without language prefix
-    function getCurrentPath() {
-        if (typeof window !== 'undefined') {
-            const path = window.location.pathname;
-            // Remove language prefix if exists
-            const pathWithoutLang = path.replace(/^\/en\//, '/');
-            return pathWithoutLang;
-        }
-        return '/';
-    }
+    // Note: Removed getCurrentPath() function as we now always redirect to homepage
     
     // Switch language
     function switchLanguage(langCode: string) {
@@ -31,16 +22,10 @@
                 // localStorage not available, continue anyway
             }
             
-            const currentPath = getCurrentPath();
-            let newPath = currentPath;
+            // Always redirect to homepage to avoid 404 errors
+            const newPath = langCode === 'en' ? '/en/' : '/';
             
-            // Add language prefix for English
-            if (langCode === 'en') {
-                newPath = `/en${currentPath}`;
-            }
-            // For Chinese, use default path without prefix
-            
-            // Navigate to new path
+            // Navigate to homepage of selected language
             window.location.href = newPath;
         }
     }

@@ -2,9 +2,10 @@
 title: Extracting Specific Traces Using Langfuse API
 published: 2025-08-22
 description: Extracting trace logs for specific traces using Langfuse API
-tags: [langfuse, api, trace, log]
+tags: ['langfuse', 'api', 'trace', 'log']
 category: Learning
-draft: false
+draft: False
+slug: extracting-specific-traces-using-langfuse-api
 ---
 
 # Extracting Trace Logs for Specific Traces Using Langfuse API

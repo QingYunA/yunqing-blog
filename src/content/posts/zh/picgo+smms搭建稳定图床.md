@@ -2,9 +2,10 @@
 title: PicGo+SMMS搭建稳定图床
 published: 2025-08-11
 description: PicGo+SMMS搭建稳定图床
-tags: [PicGo, SMMS, 图床]
+tags: ['PicGo', 'SMMS', '图床']
 category: 工具
-draft: false
+draft: False
+slug: picgosmms搭建稳定图床
 ---
 
 # 前言

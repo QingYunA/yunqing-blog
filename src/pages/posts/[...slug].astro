@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 		return import.meta.env.PROD ? data.draft !== true : true;
 	});
 	return blogEntries.map((entry) => ({
-		params: { slug: entry.slug },
+		params: { slug: entry.data.slug || entry.slug }, // Use custom slug if provided, fallback to file name
 		props: { entry },
 	}));
 }

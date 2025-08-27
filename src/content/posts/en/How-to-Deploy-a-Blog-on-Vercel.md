@@ -2,9 +2,10 @@
 title: How to Deploy a Blog on Vercel
 published: 2025-08-27
 description: How to Deploy a Blog on Vercel
-tags: [blog,vercel]
+tags: ['blog', 'vercel']
 category: Blog
-draft: false
+draft: False
+slug: how-to-deploy-a-blog-on-vercel
 ---
 
 ## Find a Blog Template You Like

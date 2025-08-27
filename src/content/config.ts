@@ -32,6 +32,7 @@ const postsEnCollection = defineCollection({
 		tags: z.array(z.string()).optional().default([]),
 		category: z.string().optional().nullable().default(""),
 		lang: z.string().optional().default("en"),
+		slug: z.string().optional(), // Custom URL slug
 
 		/* For internal use */
 		prevTitle: z.string().default(""),
@@ -52,6 +53,7 @@ const postsZhCollection = defineCollection({
 		tags: z.array(z.string()).optional().default([]),
 		category: z.string().optional().nullable().default(""),
 		lang: z.string().optional().default("zh_CN"),
+		slug: z.string().optional(), // Custom URL slug
 
 		/* For internal use */
 		prevTitle: z.string().default(""),

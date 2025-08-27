@@ -2,9 +2,10 @@
 title: Setting Up a Stable Image Host with PicGo + SMMS
 published: 2025-08-11
 description: Setting Up a Stable Image Host with PicGo + SMMS
-tags: [PicGo, SMMS, Image Hosting]
+tags: ['PicGo', 'SMMS', 'Image Hosting']
 category: Tools
-draft: false
+draft: False
+slug: setting-up-a-stable-image-host-with-picgo-smms
 ---
 
 # Preface

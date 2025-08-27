@@ -2,9 +2,10 @@
 title: 在vercel上购买的域名如何验证google search console
 published: 2025-08-25
 description: 在vercel上购买的域名如何验证google search console
-tags: [vercel, google search console, 域名]
+tags: ['vercel', 'google search console', '域名']
 category: 学习
-draft: false
+draft: False
+slug: 在vercel上购买的域名如何验证google-search-console
 ---
 
 # 在vercel上购买的域名如何验证google search console

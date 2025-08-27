@@ -2,9 +2,10 @@
 title: 通过TypeScript语法让大模型(LLMs)理解树形json结构
 published: 2025-08-21
 description: 通过TypeScript语法让大模型(LLMs)理解树形json结构
-tags: [大模型, 树形json, 理解, LLMs, TypeScript]
+tags: ['大模型', '树形json', '理解', 'LLMs', 'TypeScript']
 category: 工具
-draft: false
+draft: False
+slug: 通过typescript语法让大模型llms理解树形json结构
 ---
 
 ## 动机
