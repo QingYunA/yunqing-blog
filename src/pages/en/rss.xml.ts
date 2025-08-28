@@ -32,12 +32,11 @@ export async function GET(context: APIContext) {
 		title: `${siteConfig.title} - English`,
 		description: `${siteConfig.subtitle} - English posts`,
 		site: context.site ?? "https://yunqing.org",
-		language: "en-US",
 		items: blog.map((post) => ({
 			title: post.data.title,
 			pubDate: post.data.published,
 			description: post.data.description || "",
-			link: url(`/en/posts/${post.slug}/`),
+			link: url(`/en/posts/${post.data.slug || post.slug}/`), // Use custom slug if available
 			content: stripInvalidXmlChars(
 				sanitizeHtml(parser.render(post.body), {
 					allowedTags: sanitizeHtml.defaults.allowedTags.concat([
@@ -50,5 +49,6 @@ export async function GET(context: APIContext) {
 			),
 			categories: post.data.tags,
 		})),
+		customData: `<language>en-US</language>`,
 	});
 }

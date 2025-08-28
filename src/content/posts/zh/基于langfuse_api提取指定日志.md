@@ -94,4 +94,6 @@ while has_more:
 
     page += 1
 
+print(f"✅成功导出{results}条日志")
+
 ```
