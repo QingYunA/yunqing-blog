@@ -75,6 +75,15 @@ const { currentPath = "/" } = Astro.props;
 
 		// 检查是否需要重定向
 		function shouldRedirect() {
+			// 检查是否是搜索引擎爬虫
+			const userAgent = navigator.userAgent.toLowerCase();
+			const isBot = /googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|sogou|ia_archiver|facebookexternalhit|twitterbot|linkedinbot|whatsapp|telegrambot/.test(userAgent);
+			
+			// 如果是爬虫，不进行自动重定向
+			if (isBot) {
+				return false;
+			}
+
 			// 如果用户已经手动选择过语言，不自动重定向
 			const userPreference = getUserPreference();
 			if (userPreference) {
